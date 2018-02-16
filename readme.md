@@ -20,6 +20,8 @@ user's eyes and their movement.
 
 ## Accomplishments
 
+## Technical and Creative Challenges
+
 ## Demo
 
 ## What We Learned
