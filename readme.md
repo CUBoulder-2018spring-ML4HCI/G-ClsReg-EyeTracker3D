@@ -21,6 +21,9 @@ user's eyes and their movement.
 For the classification side of our project, we decided to use a KNN algorithim. We chose this due to the fact that the analysis of our data centers around 
 the actual locations that the user is looking at on the "plane" of the flat screen. 
 
+For the regression side of our data, we chose to incorporate a linear regression-type model so that we could construct an accurate function to represent 
+where our user's eyes are looking without having to programatically write it ourselves. 
+
 NEED TO ADD MORE HERE
 
 ## Architecture
@@ -30,22 +33,27 @@ and packaged it up into two seperate OSC messages, which were then sent to two s
 algorithim. The regression algorithim then forwarded its data onto our Blender model, which used an OSC receiver package to know where to look. The classification data was sent to 
 a seperate Python script, which displayed the general region that the user was looking at. 
 
-![Architecture diagram](https://octodex.github.com/images/yaktocat.png)
+![Architecture diagram](https://raw.githubusercontent.com/nearsr/EyeTracker3D/master/readme-assets/model-diagram.png)
 
 ## Accomplishments
 
-STILL WORKING ON THIS PART
+We accomplished several lower-level acheivements in order to constuct the overall high-level ML project we have today. Several are listed here.  
+* Configure Blender to receive OSC messages.
+* Construct an eye/face rig in Blender to model our output.
+* Build a package that can take the low-level Tobii calls and send them to Wekinator as OSC output.
+* Select and train a regression algorithim using real-time eye-tracking data to pass onto Blender.
+* Select and train a classification algorithim to classify the various regions that the user is looking at.
 
 ## Technical and Creative Challenges
 
 We faced several technical and creative challenges along this path. One of our first issues was figuring out how to interface with the Tobii hardware. Fortunately, the makers
-of Tobii provide a conveinent, if low-level, API. 
+of Tobii provide a conveinent, if low-level, API. We were able to access some of the sparse documentation that the company provides and incorporate their data streams into our 
+final product, giving us an accurate way to input eye-tracking data. 
 
 ## Demo
 
-STILL WORKING ON THIS PART
+You can find our demo video [here](https://www.youtube.com/watch?v=dQw4w9WgXcQ
 
 ## What We Learned
 
-STILL WORKING ON THIS PART
-
+We learned quite a bit about eye and facial tracking from the documentation we read and videos we watched online. 
