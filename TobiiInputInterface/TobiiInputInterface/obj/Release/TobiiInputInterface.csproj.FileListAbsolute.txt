@@ -1,0 +1,12 @@
+C:\Users\Jon\Documents\GitHub\EyeTracker3D\TobiiInputInterface\TobiiInputInterface\obj\Release\TobiiInputInterface.csproj.CoreCompileInputs.cache
+C:\Users\Jon\Documents\GitHub\EyeTracker3D\TobiiInputInterface\TobiiInputInterface\bin\Release\Tobii.EyeX.Client.dll
+C:\Users\Jon\Documents\GitHub\EyeTracker3D\TobiiInputInterface\TobiiInputInterface\bin\Release\TobiiInputInterface.exe.config
+C:\Users\Jon\Documents\GitHub\EyeTracker3D\TobiiInputInterface\TobiiInputInterface\bin\Release\TobiiInputInterface.exe
+C:\Users\Jon\Documents\GitHub\EyeTracker3D\TobiiInputInterface\TobiiInputInterface\bin\Release\TobiiInputInterface.pdb
+C:\Users\Jon\Documents\GitHub\EyeTracker3D\TobiiInputInterface\TobiiInputInterface\bin\Release\SharpOSC.dll
+C:\Users\Jon\Documents\GitHub\EyeTracker3D\TobiiInputInterface\TobiiInputInterface\bin\Release\Tobii.Interaction.Model.dll
+C:\Users\Jon\Documents\GitHub\EyeTracker3D\TobiiInputInterface\TobiiInputInterface\bin\Release\Tobii.Interaction.Net.dll
+C:\Users\Jon\Documents\GitHub\EyeTracker3D\TobiiInputInterface\TobiiInputInterface\bin\Release\SharpOSC.pdb
+C:\Users\Jon\Documents\GitHub\EyeTracker3D\TobiiInputInterface\TobiiInputInterface\obj\Release\TobiiInputInterface.csprojResolveAssemblyReference.cache
+C:\Users\Jon\Documents\GitHub\EyeTracker3D\TobiiInputInterface\TobiiInputInterface\obj\Release\TobiiInputInterface.exe
+C:\Users\Jon\Documents\GitHub\EyeTracker3D\TobiiInputInterface\TobiiInputInterface\obj\Release\TobiiInputInterface.pdb
