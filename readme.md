@@ -18,9 +18,22 @@ user's eyes and their movement.
 
 ## ML Choices
 
+For the classification side of our project, we decided to use a KNN algorithim. We chose this due to the fact that the analysis of our data centers around 
+the actual locations that the user is looking at on the "plane" of the flat screen. 
+
+## Architecture
+
+The Tobii Eye Tracking Bar provides a low-level API which we were able to interface with. We took the data from the streams that the Tobii API provided
+and packaged it up into two seperate OSC messages, which were then sent to two seperate instances of Wekinator, one running a classification and one running a regression
+algorithim. The regression algorithim then forwarded its data onto our Blender model, which used an OSC receiver package to know where to look. The classification data was sent to 
+a seperate Python script, which displayed the general region that the user was looking at. 
+
 ## Accomplishments
 
 ## Technical and Creative Challenges
+
+We faced several technical and creative challenges along this path. One of our first issues was figuring out how to interface with the Tobii hardware. Fortunately, the makers
+of Tobii provide a conveinent, if low-level, API. 
 
 ## Demo
 
