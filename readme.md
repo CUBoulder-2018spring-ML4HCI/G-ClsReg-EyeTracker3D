@@ -24,8 +24,6 @@ the actual locations that the user is looking at on the "plane" of the flat scre
 For the regression side of our data, we chose to incorporate a linear regression-type model so that we could construct an accurate function to represent 
 where our user's eyes are looking without having to programatically write it ourselves. 
 
-NEED TO ADD MORE HERE
-
 ## Architecture
 
 The Tobii Eye Tracking Bar provides a low-level API which we were able to interface with. We took the data from the streams that the Tobii API provided
@@ -52,7 +50,7 @@ final product, giving us an accurate way to input eye-tracking data.
 
 ## Demo
 
-You can find our demo video [here](https://www.youtube.com/watch?v=dQw4w9WgXcQ
+You can find our demo video [here](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 ## What We Learned
 
