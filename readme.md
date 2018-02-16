@@ -1,6 +1,6 @@
 # Feature Extraction Project - Week 5
 
-Stacia Near
+Stacia Near  
 Jonathan Meade  
 CSCI-4830  
 Dr. Ben Shapiro  
@@ -21,6 +21,8 @@ user's eyes and their movement.
 For the classification side of our project, we decided to use a KNN algorithim. We chose this due to the fact that the analysis of our data centers around 
 the actual locations that the user is looking at on the "plane" of the flat screen. 
 
+NEED TO ADD MORE HERE
+
 ## Architecture
 
 The Tobii Eye Tracking Bar provides a low-level API which we were able to interface with. We took the data from the streams that the Tobii API provided
@@ -30,6 +32,8 @@ a seperate Python script, which displayed the general region that the user was l
 
 ## Accomplishments
 
+STILL WORKING ON THIS PART
+
 ## Technical and Creative Challenges
 
 We faced several technical and creative challenges along this path. One of our first issues was figuring out how to interface with the Tobii hardware. Fortunately, the makers
@@ -37,5 +41,9 @@ of Tobii provide a conveinent, if low-level, API.
 
 ## Demo
 
+STILL WORKING ON THIS PART
+
 ## What We Learned
+
+STILL WORKING ON THIS PART
 
