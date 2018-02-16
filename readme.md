@@ -30,6 +30,8 @@ and packaged it up into two seperate OSC messages, which were then sent to two s
 algorithim. The regression algorithim then forwarded its data onto our Blender model, which used an OSC receiver package to know where to look. The classification data was sent to 
 a seperate Python script, which displayed the general region that the user was looking at. 
 
+![Architecture diagram](https://octodex.github.com/images/yaktocat.png)
+
 ## Accomplishments
 
 STILL WORKING ON THIS PART
