@@ -21,3 +21,4 @@ C:\Users\Jon\Documents\GitHub\EyeTracker3D\TobiiInputInterface\TobiiInputInterfa
 C:\Users\Jon\Documents\GitHub\EyeTracker3D\TobiiInputInterface\TobiiInputInterface\obj\Debug\TobiiInputInterface.csproj.CoreCompileInputs.cache
 C:\Users\Jon\Documents\GitHub\EyeTracker3D\TobiiInputInterface\TobiiInputInterface\obj\Debug\TobiiInputInterface.exe
 C:\Users\Jon\Documents\GitHub\EyeTracker3D\TobiiInputInterface\TobiiInputInterface\obj\Debug\TobiiInputInterface.pdb
+C:\Users\Jon\Documents\GitHub\EyeTracker3D\TobiiInputInterface\TobiiInputInterface\bin\Debug\SharpOSC.dll

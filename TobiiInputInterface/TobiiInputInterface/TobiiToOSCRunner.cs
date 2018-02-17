@@ -9,7 +9,7 @@ using Tobii.Interaction;
 /*
  * This code was authored to connect to the Tobii EyeTracking Bar and send a constant stream of OSC
  * messages containing the user's current eye gaze position to the specified 
- * address and port. It IS hacky, although I am currently working on a cleaned-up version.
+ * address and port. It is hacky, I'm working on a cleaned up version. I know what clean code is, trust me.
  * 
  * Questions? Contact me. 
  * Jon Meade
@@ -38,6 +38,7 @@ namespace TobiiInputInterface
     class TobiiToOSCRunner
     {
         public static String[] commandLineArgs;
+        public static Point currentPoint = new Point(0,0);
 
         static void Main(string[] args)
         {
@@ -46,13 +47,20 @@ namespace TobiiInputInterface
                 Console.WriteLine("Usage: TobiiInputInterface [dest-ip] [dest-port]");
                 System.Environment.Exit(1);
             }
+
             commandLineArgs = args;
             var tobiiHost = new Host();
             var gazePointDataStream = tobiiHost.Streams.CreateGazePointDataStream();
+            UDPSender sender = instantiateNewUDPStream(commandLineArgs[0], Int32.Parse(commandLineArgs[1]));
+
             Console.WriteLine("Waiting for Eye Bar Input...");
+            startStreamData(gazePointDataStream);
+
             while (true)
             {
-                sendCurrentPointOverOSCAndWait(gazePointDataStream);
+                System.Threading.Thread.Sleep(500);
+                OscMessage msg = buildMessageFromPoint(currentPoint);
+                sendEyeCoordsOverOSC(sender, msg);
             }
         }
 
@@ -68,16 +76,17 @@ namespace TobiiInputInterface
             return message;
         }
 
-        static void sendCurrentPointOverOSCAndWait(GazePointDataStream currentTobiiStream)
+        static void startStreamData(GazePointDataStream currentTobiiStream)
         {
-            UDPSender sender = instantiateNewUDPStream(commandLineArgs[0], Int32.Parse(commandLineArgs[1]));
-            GazePointDataStream gazeStream = currentTobiiStream.GazePoint((x,y,ts) => sendEyeCoordsOverOSC(sender, buildMessageFromPoint(new Point(x, y))));
+            GazePointDataStream gazeStream = currentTobiiStream.GazePoint((x, y, ts) => { currentPoint.x = x; currentPoint.y = y; });
+            return;
         }
 
         static void sendEyeCoordsOverOSC(UDPSender sender, OscMessage message)
         {
             Console.WriteLine("Sent point (" + message.Arguments[0] + ", " + message.Arguments[1] + ")");
             sender.Send(message);
+            return;
         }
     }
 }
