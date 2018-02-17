@@ -18,11 +18,14 @@ user's eyes and their movement.
 
 ## ML Choices
 
-For the classification side of our project, we decided to use a KNN algorithim. We chose this due to the fact that the analysis of our data centers around 
-the actual locations that the user is looking at on the "plane" of the flat screen. 
+For the classification side of our project, we decided to use a KNN algorithim with an N value of 2. We chose this due to the fact that the analysis of our data centers around 
+the actual locations that the user is looking at on the "plane" of the flat screen. The two-dimensional feature space that the points construct lends itself 
+greatly to the general theory behind the KNN algorithim. We chose our N value in order to smooth out erroneous data and noise which will naturally occur when using a tool
+as finnicky as the Tobii machine. 
 
-For the regression side of our data, we chose to incorporate a linear regression-type model so that we could construct an accurate function to represent 
-where our user's eyes are looking without having to programatically write it ourselves. 
+For the regression side of our data, we chose to incorporate a linear regression model so that we could construct an accurate function to represent 
+where our user's eyes are looking without having to programatically write it ourselves. The axes had a maximum and a minimum which we could configure within
+Wekinator.
 
 ## Architecture
 
@@ -54,4 +57,5 @@ You can find our demo video [here](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 ## What We Learned
 
-We learned quite a bit about eye and facial tracking from the documentation we read and videos we watched online. 
+We learned quite a bit about eye and facial tracking from the documentation we read and videos we watched online. We also learned some about implementing tools with which
+we have little to no experience and documentation on. 
