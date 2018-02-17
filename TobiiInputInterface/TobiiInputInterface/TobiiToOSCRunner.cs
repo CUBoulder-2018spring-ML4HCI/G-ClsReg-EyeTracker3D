@@ -72,7 +72,7 @@ namespace TobiiInputInterface
 
         static OscMessage buildMessageFromPoint(Point p)
         {
-            OscMessage message = new SharpOSC.OscMessage("/wek/inputs", p.x, p.y);
+            OscMessage message = new SharpOSC.OscMessage("/wek/inputs", (float)p.x, (float)p.y);
             return message;
         }
 
