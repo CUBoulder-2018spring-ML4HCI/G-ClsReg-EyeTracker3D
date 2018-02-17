@@ -30,9 +30,9 @@ Wekinator.
 ## Architecture
 
 The Tobii Eye Tracking Bar provides a low-level API which we were able to interface with. We took the data from the streams that the Tobii API provided
-and packaged it up into two seperate OSC messages, which were then sent to two seperate instances of Wekinator, one running a classification and one running a regression
+and packaged it up into OSC messages, which were then sent to two seperate models in Wekinator, one running a classification and one running a regression
 algorithim. The regression algorithim then forwarded its data onto our Blender model, which used an OSC receiver package to know where to look. The classification data was sent to 
-a seperate Python script, which displayed the general region that the user was looking at. 
+a seperate script, which displayed the general quadrant of the screen that the user was looking at. 
 
 ![Architecture diagram](https://raw.githubusercontent.com/nearsr/EyeTracker3D/master/readme-assets/model-diagram.png)
 
@@ -53,7 +53,7 @@ final product, giving us an accurate way to input eye-tracking data.
 
 ## Demo
 
-You can find our demo video [here](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+You can find our demo video [here](https://youtu.be/0WqDisQNXPQ).
 
 ## What We Learned
 
